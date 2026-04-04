@@ -24,14 +24,30 @@ body {
     position: fixed;
     height: 100vh;
 }
+.profile-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
 
-.profile-photo {
-    width: 140px;
-    height: 140px;
+.profile-image {
+    /* Resizing the image smaller */
+    width: 125px; 
+    height: 125px;
+    
+    /* Creating the circle */
     border-radius: 50%;
-    border: 3px solid rgba(255, 255, 255, 0.3);
-    object-fit: cover;
-    margin-bottom: 20px;
+    
+    /* Creating the frame border */
+    border: 4px solid #ffffff; 
+    
+    /* Adds a subtle shadow for depth */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    
+    /* Ensures the image doesn't stretch */
+    object-fit: cover; 
+}
+
 }
 
 .sidebar h1 {
