@@ -214,7 +214,7 @@
                 
                 <div class="project-card">
                     <h3>Enterprise Hybrid Automation Framework (Java/Selenium)</h3>
-                  <h4> 1. Project Overview </h4>
+                  <h4> Project Overview </h4>
  <p>Developed a robust, scalable, and maintainable end-to-end automation suite designed to validate complex web workflows. This framework utilizes a Hybrid approach, combining Page Object Model (POM) for UI abstraction and Data-Driven Testing to execute hundreds of test permutations without code changes.</p>
               <h4>Core Architecture & Tech Stack </h4> 
                   <p>   Language: Java (JDK 11+)
@@ -225,6 +225,27 @@
                         Design Pattern: Page Object Model (POM) with Page Factory
                         Data Management: Apache POI (Excel) and .properties files
                   </p>
+             <h4>Key Framework Features </h4> 
+                    <dl>
+  <dt><strong>Hybrid Design</strong></dt>
+  <dd>Decouples test scripts from data and UI elements, ensuring minimal maintenance when the application UI changes.</dd>
+
+  <dt><strong>Dynamic Data Injection</strong></dt>
+  <dd>Uses a Data Provider to feed test cases from external Excel sheets, allowing for massive regression coverage.</dd>
+
+  <dt><strong>Wait Strategy</strong></dt>
+  <dd>Implemented a centralized Fluent Wait utility to handle asynchronous elements and AJAX calls, reducing "flaky" tests.</dd>
+
+  <dt><strong>Failure Intelligence</strong></dt>
+  <dd>Automatic screen capture on test failure integrated directly into the Extent Report for faster debugging.</dd>
+
+  <dt><strong>Parallel Execution</strong></dt>
+  <dd>Configured via testng.xml to run tests across multiple browsers (Chrome/Firefox/Edge) simultaneously, significantly reducing execution time.</dd>
+
+  <dt><strong>CI/CD Ready</strong></dt>
+  <dd>Fully integrated with Jenkins via Maven profiles for scheduled nightly builds and "Shift-Left" validation.</dd>
+</dl>
+                    
                     <div class="tech-tags">
                         <span class="tag">Selenium</span><span class="tag">Java</span><span class="tag">Jenkins</span>
                     </div>
